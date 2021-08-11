@@ -1,1 +1,1 @@
-web: gunicorn --workers=3 -b :$PORT app:app
+web: gunicorn -b :5000 -w 2 app:app
